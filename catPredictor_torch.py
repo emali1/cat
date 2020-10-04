@@ -5,7 +5,13 @@ from torchModel import FeedForward
 import numpy as np
 import pandas as pd
 
+''' A class to perform prediction using pytorch trained model 
+    This depends on 
+    1. torchmodel file, saved trained pytorch model 
+    2. torchmodel.py file, a Pytorch Model class 
+    3. transformer_torch.joblib, a saved column transformer object as part of data process
 
+'''
 class PredictorTorch:
 
     def __init__(self,modelFile,transformerFile):
